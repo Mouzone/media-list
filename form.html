@@ -17,9 +17,42 @@
 			defer
 			src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"
 		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<script src="/utility/signIn.js"></script>
 	</head>
 	<body>
 		<!-- Form to login user -->
+		<form class="flex min-h-screen items-center justify-center">
+			<fieldset
+				class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
+			>
+				<legend class="fieldset-legend">Signup</legend>
+				<label class="label">Email</label>
+				<input
+					type="email"
+					class="input"
+				/>
+
+				<label class="label">Password</label>
+				<input
+					type="password"
+					class="input"
+				/>
+
+				<label class="label">Confrim Password</label>
+				<input
+					type="password"
+					class="input"
+				/>
+
+				<button
+					class="btn btn-primary"
+					type="submit"
+				>
+					Submit
+				</button>
+			</fieldset>
+		</form>
 		<!-- Form to create media entry with title, media format, status, and review parameters -->
 		<form
 			class="flex min-h-screen items-center justify-center"
