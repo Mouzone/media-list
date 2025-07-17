@@ -1,5 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
-
+const { createClient } = window.supabase;
 // Create a single supabase client for interacting with your database
 const supabase = createClient(
 	"https://mhdeybfxcebumtjpurby.supabase.co",
@@ -11,4 +10,7 @@ async function signUpNewUser(email, password) {
 		email,
 		password,
 	});
+	console.log(data, error);
 }
+
+signUpNewUser("sunnyliu010@gmail.com", "12wedfvb");
